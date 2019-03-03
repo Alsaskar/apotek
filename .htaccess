@@ -1,0 +1,31 @@
+RewriteEngine On
+
+RewriteRule ^dashboard$ apotek_dashboard.php
+RewriteRule ^data-petugas$ apotek_datapetugas.php
+
+RewriteRule ^tambah/data-obat$ apotek_tambah_dataobat.php
+RewriteRule ^tambah/data-petugas$ apotek_tambah_datapetugas.php
+RewriteRule ^data-obat$ apotek_dataobat.php
+RewriteRule ^data-obat/expire$ apotek_dataobat_expire.php
+RewriteRule ^data-penjualan$ apotek_datapenjualan.php
+
+RewriteRule ^laporan/data-petugas$ laporan_datapetugas.php
+RewriteRule ^laporan/data-obat$ laporan_dataobat.php
+RewriteRule ^laporan/stok-obat/terjual$ laporan_stokobat_terjual.php
+RewriteRule ^laporan/penjualan-obat$ laporan_penjualanobat.php
+RewriteRule ^laporan/keuangan$ laporan_keuangan.php
+
+RewriteRule ^laporan/cetak/keuangan/semua$ apotek_laporan_cetak_keuangan_semua.php
+
+RewriteRule ^penjualan/obat$ apotek_penjualan_obat.php
+
+RewriteRule ^ganti-password$ apotek_gantipassword.php
+
+RewriteRule ^edit/data-obat/([^/.]+)$ apotek_editdataobat.php?id=$1
+RewriteRule ^detail/data-obat/([^/.]+)$ apotek_detaildataobat.php?id=$1
+RewriteRule ^hapus-obat/([^/.]+)$ apotek_hapusdataobat.php?id=$1
+RewriteRule ^hapus-petugas/([^/.]+)$ apotek_hapusdatapetugas.php?id=$1
+RewriteRule ^nota-penjualan/([^/.]+)$ apotek_notapenjualan.php?noNota=$1
+RewriteRule ^hapus-penjualan/([^/.]+)$ apotek_hapusdatapenjualan.php?kode_penjualan=$1
+
+RewriteRule ^laporan/cetak/keuangan/([^/.]+)/([^/.]+)$ apotek_laporan_cetak_keuangan.php?tglAwal=$1&tglAkhir=$2

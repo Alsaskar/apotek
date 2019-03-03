@@ -1,0 +1,14 @@
+#data_penjualan h4{
+	background-color: blue;
+	width: 100%;
+	height: 25px;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+#prosesPeriode{
+	margin-top: -0.5%;
+}
